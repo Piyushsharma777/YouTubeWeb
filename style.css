@@ -4,6 +4,9 @@
 body{
   background-color: rgb(211, 202, 197);
 }
+a{
+  text-decoration: none;
+}
 .nav{
 background-color: rgb(234, 234, 234);
 height: 56px;
@@ -144,14 +147,16 @@ cursor: pointer;
 }
 .vid{
 display: flex;
-
+  overflow:hidden;
+  position: relative;
+  top: 70px;
 }
 .image{
 position: relative;
 left: 140px;
-top: 70px;
-margin-bottom: 30px;
 
+margin-bottom: 30px;
+  overflow:hidden;
 }
 .image img:hover{
 
@@ -366,6 +371,12 @@ font-size: 12px;
  margin-top:70px;
 margin-left:100px;
 }
+  .vid{
+  display: flex;
+  
+    position: relative;
+    top: 0px;
+  }
 
 .image {
     position: static;
@@ -381,7 +392,7 @@ margin-left:100px;
 .image img {
     max-width: 100%;
     height: auto;
-
+  
 }
 
 .timestamp{
@@ -415,6 +426,7 @@ font-family: Arial, Helvetica, sans-serif;
 display: inline-block;
 font-weight: 600;
 text-align: left;
+    
 
 }
 
